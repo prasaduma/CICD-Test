@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('SCM') {
             steps{
-             scm
+             git url: 'https://github.com/prasaduma/CICD-Test.git'
             }
     
         }
