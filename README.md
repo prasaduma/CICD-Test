@@ -1,6 +1,8 @@
 # CICD-Test
 This Reposatiry contains a  simple Java Web Application, which outputs the string
-"Hello world!"  This project uses maven tool to test & package this application
+"Hello world!"  
+
+This project uses maven tool to test & package this application
 A WAR is generated at 'target/project.war'
 
 ## Jenkins Pipeline
@@ -52,6 +54,7 @@ export JAVA_HOME=/usr
 apache-tomcat-8.5.49/startup.sh
 ```
 check tomcat logs at /opt/tomcat/apache-tomcat-8.5.49/logs/catalina.out
+
 edited  conf/server.xml to change tomcat port from 8080 to 8888
 
 
