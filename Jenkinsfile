@@ -1,4 +1,6 @@
-def tomcatDeployDir = "/opt/tomcat/"
+def tomcatDeployDir = "/opt/tomcat/apache-tomcat-8.5.49/webapps/"
+def srcwarPath="/target/project.war"
+def dstwarPath= ""
 
 pipeline {
 
@@ -18,8 +20,8 @@ pipeline {
         }
         stage('Run/Deploy') {
             steps {
-               
-                 sh "echo $workspace"
+                sh "echo $tomcatDeployDir"
+                sh "cp $workspace$srcwarPath $tomcatDeployDir"
             }
         }
     }
