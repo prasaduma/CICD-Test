@@ -1,7 +1,6 @@
 # CICD-Test
 This Reposatiry contains a  simple Java Web Application, which outputs the string
 "Hello world!"  
-
 This project uses maven tool to test & package this application
 A WAR is generated at 'target/project.war'
 
@@ -51,11 +50,15 @@ wget http://mirrors.estointernet.in/apache/tomcat/tomcat-8/v8.5.49/bin/apache-to
 tar -xvf apache-tomcat-8.5.49.tar.gz
 export CATALINA_HOME=/opt/tomcat/apache-tomcat-8.5.49
 export JAVA_HOME=/usr
+```
+Check tomcat logs at /opt/tomcat/apache-tomcat-8.5.49/logs/catalina.out.
+
+Edited  conf/server.xml to change tomcat port from 8080 to 8888
+Startup script
+```
 apache-tomcat-8.5.49/startup.sh
 ```
-check tomcat logs at /opt/tomcat/apache-tomcat-8.5.49/logs/catalina.out
 
-edited  conf/server.xml to change tomcat port from 8080 to 8888
 
 
 
