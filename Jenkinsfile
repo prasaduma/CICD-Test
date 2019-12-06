@@ -21,7 +21,7 @@ pipeline {
         stage('Run/Deploy') {
             steps {
                 sh "echo $tomcatDeployDir"
-                sh "cp $workspace$srcwarPath $tomcatDeployDir"
+                sh "sudo cp $workspace$srcwarPath $tomcatDeployDir"
             }
         }
     }
