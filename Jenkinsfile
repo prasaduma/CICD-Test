@@ -1,6 +1,5 @@
 def tomcatDeployDir = "/opt/tomcat/"
-def workspace = pwd()
-def warPath ="file.war"
+
 pipeline {
 
     
