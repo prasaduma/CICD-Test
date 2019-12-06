@@ -1,4 +1,8 @@
 pipeline {
+    def tomcatDeployDir = "/opt/tomcat/"
+    def workspace = pwd()
+    def warPath ="file.war"
+    
     agent any
     
     stages {
@@ -14,7 +18,8 @@ pipeline {
         }
         stage('Run/Deploy') {
             steps {
-                 sh 'mvn package'
+               
+                 sh "echo $workspace"
             }
         }
     }
